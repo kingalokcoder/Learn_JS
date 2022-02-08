@@ -86,19 +86,26 @@
 
 
 //key-value pair
-const Person=
-{
-    firstName:"Alok",
-    LastName:"Ranjan",
-    Hobbies:["Music","Self Development","Creating interesting things"],
-    Address:
-    {
-        street:"Gokul co-operative colony",
-        state:"Bihar",
-        city:"Patna"
-    }
-}
+//Here object is Person which has many
+//properties or attributes
 
+// const Person=
+// {
+//     firstName:"Alok",
+//     LastName:"Ranjan",
+//     Hobbies:["Music","Self Development","Creating interesting things"],
+//     Address:
+//     {
+//         street:"Gokul co-operative colony",
+//         state:"Bihar",
+//         city:"Patna"
+//     }
+// }
+// Person.email="alokranjan5111998@gmail.com";
+// console.log(Person);
+// console.log(Person.firstName,Person.LastName);
+// console.log(Person.Hobbies[1]);
+// console.log(Person.Address.city);
 
 
 
