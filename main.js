@@ -135,3 +135,14 @@
 // const toDosJson = JSON.stringify(toDos);
 // console.log(toDosJson);
 
+for(let i=0;i<10;i++)
+{
+   console.log(`for loop number ${i}`)
+}
+
+let t=0;
+while(t<10)
+{
+    console.log(`while loop number ${t}`);
+    t++;
+}
