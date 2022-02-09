@@ -135,14 +135,74 @@
 // const toDosJson = JSON.stringify(toDos);
 // console.log(toDosJson);
 
-for(let i=0;i<10;i++)
+// for(let i=0;i<10;i++)
+// {
+//    console.log(`for loop number ${i}`)
+// }
+
+// let t=0;
+// while(t<10)
+// {
+//     console.log(`while loop number ${t}`);
+//     t++;
+// }
+
+
+
+const toDos=
+[
 {
-   console.log(`for loop number ${i}`)
+    id:1,
+    task:"Learn stock",
+    isCompleted:true
+}
+,
+{
+        id:2,
+        task:"Learn js",
+          isCompleted:true
+}
+,
+{
+    id:3,
+    task:"learn dsa",
+    isCompleted:false
+}
+];
+
+for(let i=0;i<3;i++)
+{
+    console.log(toDos[i].task);
 }
 
-let t=0;
-while(t<10)
+//Another way of iterating 
+for(let todo of toDos)
 {
-    console.log(`while loop number ${t}`);
-    t++;
+    console.log(todo);
 }
+
+for(let todo of toDos)
+{
+    console.log(todo.task);
+}
+
+//Higher order array method for iteration
+//forEach, map, filter
+
+toDos.forEach(function(todo)
+{
+    console.log(todo.isCompleted)
+});
+
+//Ruturn an array of task string
+const toDoTask= toDos.map(function(todo)
+{
+    return todo.task;
+});
+console.log(toDoTask);
+
+const isCompleted = toDos.filter(function(todo)
+{
+    return todo.isCompleted==true;
+});
+console.log(isCompleted);
