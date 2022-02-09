@@ -109,5 +109,29 @@
 
 
 
-
+//Array of objects
+// const toDos=
+// [
+// {
+//     id:1,
+//     task:"Learn stock",
+//     isCompleted:true
+// }
+// ,
+// {
+//         id:2,
+//         task:"Learn js",
+//           isCompleted:true
+// }
+// ,
+// {
+//     id:3,
+//     task:"learn dsa",
+//     isCompleted:false
+// }
+// ];
+// console.log(toDos);
+// console.log(toDos[1].task);
+// const toDosJson = JSON.stringify(toDos);
+// console.log(toDosJson);
 
