@@ -1,15 +1,17 @@
-//Ternary
+//functions
 
-const x=1;
-const color= x>10?'red':'blue';
-
-switch(color)
+function addNums(num1,num2)
 {
-    case 'red':
-        console.log('color is red');break;
-    case 'blue':
-        console.log('color is blue');break;
-     default :
-         console.log("color is neither blue or nor red");break;
+    return (num1+num2);
 }
 
+console.log(addNums());//Out put NaN
+console.log(addNums(4,5));//out 9
+function addNumbers(num1=1,num2=8)
+{
+    console.log(num1+num2);
+}
+addNumbers();//9 default activated
+addNumbers(10,8);
+
+//learn arrow function in detail
