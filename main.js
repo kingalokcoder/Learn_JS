@@ -1,23 +1,12 @@
-class Person
-{
-    constructor(firstName,lastName,age)
-    {
-        this.firstName=firstName;
-        this.lastName=lastName;
-        this.age=age;
-    }
-    get Age()
-    {
-        return this.age;
-    }
-    get FullName()
-    {
-        return `${this.firstName} ${this.lastName}`;
-    }
-}
+//selecting elements in java script
+//single element selecotr
+console.log(document.getElementById('my-form'));
+console.log(document.querySelector('.container'));
+console.log(document.querySelector('#my-form'));
 
-person1 =new Person('Alok','Ranjan',23);
-person2=new Person('Anjesh','Halwai',22);
-console.log(person1);
-console.log(person2);
-console.log(person1.age);
+//selecing multiple elements
+console.log(document.querySelectorAll('.item'));
+console.log(document.getElementsByClassName('.items'));
+console.log(document.getElementsByTagName('li'));
+
+//generally we use query selector and query selector all orget element by id
