@@ -1,17 +1,40 @@
-//functions
+//object oriented in js
+//creating Persos constructor
 
-function addNums(num1,num2)
+function Person(firstName ,lastName, age)
 {
-    return (num1+num2);
+    this.firstName=firstName;
+    this.lastName=lastName;
+    this.age=age;
+    // this.FullName = function()
+    // {
+    //     return `${this.firstName} ${this.lastName} `
+    // }
+    // this.Age= function()
+    // {
+    //     return this.age;
+    // }
+}
+//Use of prototype
+Person.prototype.FullName = function()
+{
+    return `${this.firstName} ${this.lastName} `
 }
 
-console.log(addNums());//Out put NaN
-console.log(addNums(4,5));//out 9
-function addNumbers(num1=1,num2=8)
+Person.prototype.Age= function()
 {
-    console.log(num1+num2);
+    return this.age;
 }
-addNumbers();//9 default activated
-addNumbers(10,8);
 
-//learn arrow function in detail
+//Instantiate objects
+
+const person1= new Person('Alok','Ranjan',23);
+const person2 = new Person('Ankesh','Raj',22);
+console.log(person1);
+console.log(person2);
+console.log(person1.lastName);
+console.log(person2.FullName());
+console.log(person1.Age());
+
+
+
